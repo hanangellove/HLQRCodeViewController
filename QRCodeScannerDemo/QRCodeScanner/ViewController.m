@@ -10,7 +10,7 @@
 #import "HLQRCodeViewController.h"
 #import "WebViewController.h"
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UIButton *QRCodeScan;
 
 @end
 
@@ -20,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
  
+    self.QRCodeScan.layer.cornerRadius  = self.QRCodeScan.frame.size.width/2;
+    self.QRCodeScan.layer.masksToBounds = YES;
     
     
 }
@@ -29,16 +31,13 @@
     qrcodeVC.qrReadSuccess = ^(HLQRCodeViewController *qrVC,NSString *result){
         [qrVC dismissViewControllerAnimated:YES completion:^{
         }];
-        self.resultLabel.text = result;
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:result]];
     };
     qrcodeVC.qrReadFailure = ^(HLQRCodeViewController *qrVC){
         [qrVC dismissViewControllerAnimated:YES completion:nil];
-        self.resultLabel.text = @"读取失败";
     };
     qrcodeVC.qrReadCancel = ^(HLQRCodeViewController *qrVC){
         [qrVC dismissViewControllerAnimated:YES completion:nil];
-        self.resultLabel.text = @"取消读取~";
     };
     [self presentViewController:qrcodeVC animated:YES completion:nil];
 }

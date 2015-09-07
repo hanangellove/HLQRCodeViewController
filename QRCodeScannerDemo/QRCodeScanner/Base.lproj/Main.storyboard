@@ -16,9 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-86-9sO">
-                                <rect key="frame" x="43" y="75" width="99" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-86-9sO">
+                                <rect key="frame" x="250" y="113" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.3294117647" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PsX-xM-VKa"/>
+                                    <constraint firstAttribute="height" constant="100" id="vFQ-Px-ZRI"/>
+                                </constraints>
                                 <state key="normal" title="扫描二维码">
                                     <color key="titleColor" red="0.87892597849999998" green="0.87892597849999998" blue="0.87892597849999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,18 +31,15 @@
                                     <action selector="captureQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A2m-ma-rbQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="result string" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZa-X2-CRQ">
-                                <rect key="frame" x="43" y="217" width="224" height="38"/>
-                                <color key="backgroundColor" red="0.6784366785" green="0.87563169380000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ohr-86-9sO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="8zE-z9-Yb0"/>
+                            <constraint firstAttribute="centerX" secondItem="ohr-86-9sO" secondAttribute="centerX" id="U0l-NB-YE0"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="resultLabel" destination="pZa-X2-CRQ" id="Re8-Kv-QGk"/>
+                        <outlet property="QRCodeScan" destination="ohr-86-9sO" id="M0l-tu-8fS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
