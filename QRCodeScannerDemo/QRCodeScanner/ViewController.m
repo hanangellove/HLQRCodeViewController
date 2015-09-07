@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "HLQRCodeViewController.h"
+#import "HLQRCodeGenerator.h"
+
 #import "WebViewController.h"
 
 #define kScannerMaxY 110
@@ -76,7 +78,8 @@
 }
 //生成二维码
 - (IBAction)generateQRCode:(id)sender {
-    
+    HLQRCodeGenerator * qrcodeGVC = [[HLQRCodeGenerator alloc]init];
+    [self presentViewController:qrcodeGVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

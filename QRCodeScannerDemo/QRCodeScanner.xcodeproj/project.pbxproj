@@ -18,6 +18,7 @@
 		044621AD1B957BBA00F02B56 /* HLQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044621AC1B957BBA00F02B56 /* HLQRCodeViewController.m */; };
 		044621AF1B957EAA00F02B56 /* bar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 044621AE1B957EAA00F02B56 /* bar_back.png */; };
 		044621B51B959D6300F02B56 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044621B41B959D6300F02B56 /* WebViewController.m */; };
+		1E782D161B9DDBDF004FD1A3 /* HLQRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		044621AE1B957EAA00F02B56 /* bar_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_back.png; sourceTree = "<group>"; };
 		044621B31B959D6300F02B56 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		044621B41B959D6300F02B56 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		1E782D141B9DDBDF004FD1A3 /* HLQRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLQRCodeGenerator.h; sourceTree = "<group>"; };
+		1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLQRCodeGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				044621AE1B957EAA00F02B56 /* bar_back.png */,
 				044621AB1B957BBA00F02B56 /* HLQRCodeViewController.h */,
 				044621AC1B957BBA00F02B56 /* HLQRCodeViewController.m */,
+				1E782D141B9DDBDF004FD1A3 /* HLQRCodeGenerator.h */,
+				1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */,
 				0446218D1B95442D00F02B56 /* Main.storyboard */,
 				044621901B95442D00F02B56 /* Images.xcassets */,
 				044621921B95442D00F02B56 /* LaunchScreen.xib */,
@@ -240,6 +245,7 @@
 				044621AD1B957BBA00F02B56 /* HLQRCodeViewController.m in Sources */,
 				044621B51B959D6300F02B56 /* WebViewController.m in Sources */,
 				0446218C1B95442D00F02B56 /* ViewController.m in Sources */,
+				1E782D161B9DDBDF004FD1A3 /* HLQRCodeGenerator.m in Sources */,
 				044621891B95442D00F02B56 /* AppDelegate.m in Sources */,
 				044621861B95442D00F02B56 /* main.m in Sources */,
 			);
@@ -440,6 +446,7 @@
 				044621A51B95442D00F02B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		044621A61B95442D00F02B56 /* Build configuration list for PBXNativeTarget "QRCodeScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +455,7 @@
 				044621A81B95442D00F02B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
