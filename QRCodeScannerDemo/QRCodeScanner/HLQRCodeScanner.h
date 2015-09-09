@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class HLQRCodeViewController;
+@class HLQRCodeScanner;
 
-typedef void(^QRCodeReadCancel) (HLQRCodeViewController *);
-typedef void(^QRCodeReadSuccess)(HLQRCodeViewController *,NSString *);
-typedef void(^QRCodeReadFailure)(HLQRCodeViewController *);
+typedef void(^QRCodeReadCancel) (HLQRCodeScanner *);
+typedef void(^QRCodeReadSuccess)(HLQRCodeScanner *,NSString *);
+typedef void(^QRCodeReadFailure)(HLQRCodeScanner *);
 
-@interface HLQRCodeViewController : UIViewController
+@interface HLQRCodeScanner : UIViewController
 
 @property (nonatomic,copy)QRCodeReadCancel  qrReadCancel;
 @property (nonatomic,copy)QRCodeReadSuccess qrReadSuccess;

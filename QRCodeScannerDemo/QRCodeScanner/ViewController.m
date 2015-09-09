@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HLQRCodeViewController.h"
+#import "HLQRCodeScanner.h"
 #import "HLQRCodeGenerator.h"
 
 #import "WebViewController.h"
@@ -28,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
     self.QRCodeScan.layer.cornerRadius  = self.QRCodeScan.frame.size.width/2;
     self.QRCodeScan.layer.masksToBounds = YES;
@@ -62,16 +63,16 @@
 
 //读取二维码
 - (IBAction)captureQRCode:(id)sender {
-    HLQRCodeViewController * qrcodeVC = [[HLQRCodeViewController alloc]init];
-    qrcodeVC.qrReadSuccess = ^(HLQRCodeViewController *qrVC,NSString *result){
+    HLQRCodeScanner * qrcodeVC = [[HLQRCodeScanner alloc]init];
+    qrcodeVC.qrReadSuccess = ^(HLQRCodeScanner *qrVC,NSString *result){
         [qrVC dismissViewControllerAnimated:YES completion:^{
         }];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:result]];
     };
-    qrcodeVC.qrReadFailure = ^(HLQRCodeViewController *qrVC){
+    qrcodeVC.qrReadFailure = ^(HLQRCodeScanner *qrVC){
         [qrVC dismissViewControllerAnimated:YES completion:nil];
     };
-    qrcodeVC.qrReadCancel = ^(HLQRCodeViewController *qrVC){
+    qrcodeVC.qrReadCancel = ^(HLQRCodeScanner *qrVC){
         [qrVC dismissViewControllerAnimated:YES completion:nil];
     };
     [self presentViewController:qrcodeVC animated:YES completion:nil];

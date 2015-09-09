@@ -15,10 +15,11 @@
 		044621941B95442D00F02B56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044621921B95442D00F02B56 /* LaunchScreen.xib */; };
 		044621A01B95442D00F02B56 /* QRCodeScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446219F1B95442D00F02B56 /* QRCodeScannerTests.m */; };
 		044621AA1B95480900F02B56 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044621A91B95480900F02B56 /* AVFoundation.framework */; };
-		044621AD1B957BBA00F02B56 /* HLQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044621AC1B957BBA00F02B56 /* HLQRCodeViewController.m */; };
+		044621AD1B957BBA00F02B56 /* HLQRCodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 044621AC1B957BBA00F02B56 /* HLQRCodeScanner.m */; };
 		044621AF1B957EAA00F02B56 /* bar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 044621AE1B957EAA00F02B56 /* bar_back.png */; };
 		044621B51B959D6300F02B56 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044621B41B959D6300F02B56 /* WebViewController.m */; };
-		1E782D161B9DDBDF004FD1A3 /* HLQRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */; settings = {ASSET_TAGS = (); }; };
+		046A14D21BA00B3500630C17 /* 沈梦辰1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 046A14D11BA00B3500630C17 /* 沈梦辰1.jpg */; };
+		1E782D161B9DDBDF004FD1A3 /* HLQRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +47,12 @@
 		0446219E1B95442D00F02B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0446219F1B95442D00F02B56 /* QRCodeScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeScannerTests.m; sourceTree = "<group>"; };
 		044621A91B95480900F02B56 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		044621AB1B957BBA00F02B56 /* HLQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLQRCodeViewController.h; sourceTree = "<group>"; };
-		044621AC1B957BBA00F02B56 /* HLQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLQRCodeViewController.m; sourceTree = "<group>"; };
+		044621AB1B957BBA00F02B56 /* HLQRCodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLQRCodeScanner.h; sourceTree = "<group>"; };
+		044621AC1B957BBA00F02B56 /* HLQRCodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLQRCodeScanner.m; sourceTree = "<group>"; };
 		044621AE1B957EAA00F02B56 /* bar_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_back.png; sourceTree = "<group>"; };
 		044621B31B959D6300F02B56 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		044621B41B959D6300F02B56 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		046A14D11BA00B3500630C17 /* 沈梦辰1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "沈梦辰1.jpg"; path = "../沈梦辰1.jpg"; sourceTree = "<group>"; };
 		1E782D141B9DDBDF004FD1A3 /* HLQRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLQRCodeGenerator.h; sourceTree = "<group>"; };
 		1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLQRCodeGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 		044621821B95442D00F02B56 /* QRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				046A14D11BA00B3500630C17 /* 沈梦辰1.jpg */,
 				044621871B95442D00F02B56 /* AppDelegate.h */,
 				044621881B95442D00F02B56 /* AppDelegate.m */,
 				0446218A1B95442D00F02B56 /* ViewController.h */,
@@ -103,8 +106,8 @@
 				044621B31B959D6300F02B56 /* WebViewController.h */,
 				044621B41B959D6300F02B56 /* WebViewController.m */,
 				044621AE1B957EAA00F02B56 /* bar_back.png */,
-				044621AB1B957BBA00F02B56 /* HLQRCodeViewController.h */,
-				044621AC1B957BBA00F02B56 /* HLQRCodeViewController.m */,
+				044621AB1B957BBA00F02B56 /* HLQRCodeScanner.h */,
+				044621AC1B957BBA00F02B56 /* HLQRCodeScanner.m */,
 				1E782D141B9DDBDF004FD1A3 /* HLQRCodeGenerator.h */,
 				1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */,
 				0446218D1B95442D00F02B56 /* Main.storyboard */,
@@ -224,6 +227,7 @@
 				0446218F1B95442D00F02B56 /* Main.storyboard in Resources */,
 				044621AF1B957EAA00F02B56 /* bar_back.png in Resources */,
 				044621941B95442D00F02B56 /* LaunchScreen.xib in Resources */,
+				046A14D21BA00B3500630C17 /* 沈梦辰1.jpg in Resources */,
 				044621911B95442D00F02B56 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044621AD1B957BBA00F02B56 /* HLQRCodeViewController.m in Sources */,
+				044621AD1B957BBA00F02B56 /* HLQRCodeScanner.m in Sources */,
 				044621B51B959D6300F02B56 /* WebViewController.m in Sources */,
 				0446218C1B95442D00F02B56 /* ViewController.m in Sources */,
 				1E782D161B9DDBDF004FD1A3 /* HLQRCodeGenerator.m in Sources */,

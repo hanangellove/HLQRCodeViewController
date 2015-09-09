@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 wjhg. All rights reserved.
 //
 
-#import "HLQRCodeViewController.h"
+#import "HLQRCodeScanner.h"
 #import <AVFoundation/AVFoundation.h>
 
 //设备宽/高/坐标
@@ -20,14 +20,14 @@
 #define kQRCodeReaderWidth  240
 #define kQRCodeReaderHeight 240
 
-@interface HLQRCodeViewController ()<AVCaptureMetadataOutputObjectsDelegate>
+@interface HLQRCodeScanner ()<AVCaptureMetadataOutputObjectsDelegate>
 
 @property (nonatomic,strong)AVCaptureSession * session;
 @property (nonatomic,strong)AVCaptureVideoPreviewLayer * previewLayer;
 
 @end
 
-@implementation HLQRCodeViewController
+@implementation HLQRCodeScanner
 
 - (void)viewDidLoad {
     [super viewDidLoad];
