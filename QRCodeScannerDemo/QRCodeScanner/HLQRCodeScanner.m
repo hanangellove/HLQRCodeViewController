@@ -78,8 +78,9 @@
         [_session addOutput:output];
     }
     
-    [output setMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
-    //设置二维码读取可视范围
+    //增加了条形码
+    [output setMetadataObjectTypes:@[AVMetadataObjectTypeQRCode,AVMetadataObjectTypeEAN8Code,AVMetadataObjectTypeEAN13Code,AVMetadataObjectTypeCode128Code]];
+    //设置读取可视范围
     [output setRectOfInterest:CGRectMake(kQRCodeReaderMinY/KDeviceHeight, (kDeviceWidth - kQRCodeReaderWidth)/2/kDeviceWidth, kQRCodeReaderHeight/KDeviceHeight, kQRCodeReaderWidth/kDeviceWidth)];
     
     _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.session];

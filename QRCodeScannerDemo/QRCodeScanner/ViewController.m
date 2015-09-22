@@ -28,7 +28,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view, typically from a nib.
     self.QRCodeScan.layer.cornerRadius  = self.QRCodeScan.frame.size.width/2;
     self.QRCodeScan.layer.masksToBounds = YES;
@@ -65,9 +64,15 @@
 - (IBAction)captureQRCode:(id)sender {
     HLQRCodeScanner * qrcodeVC = [[HLQRCodeScanner alloc]init];
     qrcodeVC.qrReadSuccess = ^(HLQRCodeScanner *qrVC,NSString *result){
-        [qrVC dismissViewControllerAnimated:YES completion:^{
-        }];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:result]];
+        [qrVC dismissViewControllerAnimated:YES completion:^{}];
+        if ([result hasPrefix:@"http"]) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:result]];
+
+        }else{
+            UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"扫描结果" message:result delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
+            NSLog(@"%@",result);
+        }
     };
     qrcodeVC.qrReadFailure = ^(HLQRCodeScanner *qrVC){
         [qrVC dismissViewControllerAnimated:YES completion:nil];
