@@ -77,7 +77,7 @@
     [self.view addSubview:self.generatorBtn];
     
     self.QRCodeImgV = [[UIImageView alloc]initWithFrame:CGRectMake(kDeviceWidth/2-100, CGRectGetMaxY(self.textField.frame)+50, 200, 200)];
-    self.QRCodeImgV.image = [UIImage imageNamed:@"我的二维码.jpg"];
+    self.QRCodeImgV.image = [UIImage imageNamed:@"我的二维码"];
     
     self.QRCodeImgV.userInteractionEnabled = YES;
     UILongPressGestureRecognizer * longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(saveQRCodeImage:)];
