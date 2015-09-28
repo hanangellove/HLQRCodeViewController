@@ -18,8 +18,9 @@
 		044621AD1B957BBA00F02B56 /* HLQRCodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 044621AC1B957BBA00F02B56 /* HLQRCodeScanner.m */; };
 		044621AF1B957EAA00F02B56 /* bar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 044621AE1B957EAA00F02B56 /* bar_back.png */; };
 		044621B51B959D6300F02B56 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044621B41B959D6300F02B56 /* WebViewController.m */; };
-		046A14D21BA00B3500630C17 /* 沈梦辰1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 046A14D11BA00B3500630C17 /* 沈梦辰1.jpg */; };
 		1E782D161B9DDBDF004FD1A3 /* HLQRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */; };
+		1E95BB861BB980AE0096E7D7 /* 星空.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E95BB851BB980AE0096E7D7 /* 星空.jpg */; settings = {ASSET_TAGS = (); }; };
+		1E95BB881BB985A10096E7D7 /* 我的二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E95BB871BB985A10096E7D7 /* 我的二维码.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +53,10 @@
 		044621AE1B957EAA00F02B56 /* bar_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_back.png; sourceTree = "<group>"; };
 		044621B31B959D6300F02B56 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		044621B41B959D6300F02B56 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		046A14D11BA00B3500630C17 /* 沈梦辰1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "沈梦辰1.jpg"; path = "../沈梦辰1.jpg"; sourceTree = "<group>"; };
 		1E782D141B9DDBDF004FD1A3 /* HLQRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLQRCodeGenerator.h; sourceTree = "<group>"; };
 		1E782D151B9DDBDF004FD1A3 /* HLQRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLQRCodeGenerator.m; sourceTree = "<group>"; };
+		1E95BB851BB980AE0096E7D7 /* 星空.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "星空.jpg"; sourceTree = "<group>"; };
+		1E95BB871BB985A10096E7D7 /* 我的二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的二维码.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 		044621821B95442D00F02B56 /* QRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
-				046A14D11BA00B3500630C17 /* 沈梦辰1.jpg */,
+				1E95BB851BB980AE0096E7D7 /* 星空.jpg */,
+				1E95BB871BB985A10096E7D7 /* 我的二维码.png */,
 				044621871B95442D00F02B56 /* AppDelegate.h */,
 				044621881B95442D00F02B56 /* AppDelegate.m */,
 				0446218A1B95442D00F02B56 /* ViewController.h */,
@@ -226,8 +229,9 @@
 			files = (
 				0446218F1B95442D00F02B56 /* Main.storyboard in Resources */,
 				044621AF1B957EAA00F02B56 /* bar_back.png in Resources */,
+				1E95BB881BB985A10096E7D7 /* 我的二维码.png in Resources */,
 				044621941B95442D00F02B56 /* LaunchScreen.xib in Resources */,
-				046A14D21BA00B3500630C17 /* 沈梦辰1.jpg in Resources */,
+				1E95BB861BB980AE0096E7D7 /* 星空.jpg in Resources */,
 				044621911B95442D00F02B56 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
