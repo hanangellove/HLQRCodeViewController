@@ -159,7 +159,7 @@
     NSLog(@"保存到相册");
     __block NSString *msg =nil;
     NSLog(@"%@",self.QRCodeImgV.image);
-    CIContext * context = [CIContext contextWithOptions:nil];
+    CIContext * context = [CIContext contextWithOptions:@{kCIContextUseSoftwareRenderer:@YES}];
     CGImageRef cgimg = [context createCGImage:self.qrcodeImg fromRect:[self.qrcodeImg extent] ];
     
     ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];

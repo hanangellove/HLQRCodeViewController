@@ -8,7 +8,6 @@
 
 #import "HLQRCodeGenerator.h"
 #import <AssetsLibrary/AssetsLibrary.h>
-
 //设备宽/高/坐标
 #define kDeviceWidth    [UIScreen mainScreen].bounds.size.width
 #define KDeviceHeight   [UIScreen mainScreen].bounds.size.height
@@ -156,10 +155,21 @@
 }
 
 - (void)saveImage{
+    /*
+     let softwareContext = CIContext(options: [kCIContextUseSoftwareRenderer:true])
+     let cgimg = softwareContext.createCGImage(self.transformedImage, fromRect: self.transformedImage.extent)
+     Finally setting the UIImage:
+     UIImage(CGImage: caging)
+     */
     NSLog(@"保存到相册");
+    
+//    CIContext *softwareContext = [CIContext contextWithOptions:@{kCIContextUseSoftwareRenderer:@YES}];
+//    CGImageRef cgimageRef = [softwareContext createCGImage:self.qrcodeImg fromRect:self.qrcodeImg.extent];
+//    [UIImage imageWithCGImage:cgimageRef];
+    
     __block NSString *msg =nil;
     NSLog(@"%@",self.QRCodeImgV.image);
-    CIContext * context = [CIContext contextWithOptions:nil];
+    CIContext * context = [CIContext contextWithOptions:@{kCIContextUseSoftwareRenderer:@YES}];//[CIContext contextWithOptions:nil];
     CGImageRef cgimg = [context createCGImage:self.qrcodeImg fromRect:[self.qrcodeImg extent] ];
     
     ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
